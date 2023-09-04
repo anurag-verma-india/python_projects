@@ -1,7 +1,8 @@
 from pytube import YouTube
 
 # link = "https://www.youtube.com/watch?v=FAyKDaXEAgc&list=PLu88KD9vmyro6jCAmn2fC6aiMjq830N7O&index=1"
-link = "https://www.youtube.com/shorts/1VAENIcYEIw"
+link = "https://www.youtube.com/watch?v=FAyKDaXEAgc"
+# link = "https://www.youtube.com/watch?v=6X-XUwenjbA"
 youtube_1 = YouTube(link)
 
 # print(youtube_1.title)
@@ -14,7 +15,7 @@ vid = list(enumerate(videos))
 for i in vid:
     print(i)
 print()
-# strm = int(input("enter : "))
-# videos[strm].download()
-videos[0].download()
+strm = int(input("enter : "))
+videos[strm].download()
+# videos[0].download()
 print(f"Successfully downloaded {youtube_1.title}")
