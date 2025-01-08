@@ -1,3 +1,7 @@
+# email handling
+email-handling/*
+!email-handling/sort-emails.py
+
 # pdfs and outputs
 pdf_to_jpg/pdfs/
 pdf_to_jpg/output/
