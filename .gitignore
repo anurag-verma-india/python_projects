@@ -4,6 +4,7 @@ email-handling/*
 
 # pdfs and outputs
 pdf_to_jpg/pdfs/
+pdf_to_jpg/pdf1/
 pdf_to_jpg/output/
 
 
