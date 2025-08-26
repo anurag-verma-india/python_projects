@@ -32,7 +32,8 @@ def create_coordinated_qr_image(data, filename="coordinated_qr_code.png"):
     """
     # --- 1. Generate the QR code structure ---
     qr = qrcode.QRCode(
-        version=2,
+            # version=2,
+        version=3,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
         box_size=35,  # The size of each cell in pixels
         border=4,  # The width of the border (quiet zone) in cells
@@ -93,5 +94,6 @@ def create_coordinated_qr_image(data, filename="coordinated_qr_code.png"):
 
 
 if __name__ == "__main__":
-    my_link = "https://tinyurl.com/vermaa"
+    # my_link = "https://tinyurl.com/vermaa"
+    my_link = "https://instagram.com/anurag_verma_india"
     create_coordinated_qr_image(my_link)
