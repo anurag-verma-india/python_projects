@@ -95,6 +95,6 @@ def create_coordinated_qr_image(data, filename="coordinated_qr_code.png"):
 
 if __name__ == "__main__":
     # my_link = "https://tinyurl.com/vermaa"
-    my_link = "https://instagram.com/anurag_verma_india"
-    
+    my_link = "http://instagram.com/anurag_verma_india"
+    my_link = "otpauth://totp/GitHub%3Aanurag-verma-india?period=30&digits=6&algorithm=SHA1&secret=CIGIY3EX56KLBJ6K&issuer=GitHub"
     create_coordinated_qr_image(my_link)
