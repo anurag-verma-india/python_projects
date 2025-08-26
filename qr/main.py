@@ -108,7 +108,7 @@ if __name__ == "__main__":
     current_datetime = datetime.now()
 
     # Extract only the time component
-    current_time = current_datetime.strftime("%H:%M:%S")
+    current_time = current_datetime.strftime("%Hh%Mm%Ss")
 
     # print("Current Time =", current_time)
 
