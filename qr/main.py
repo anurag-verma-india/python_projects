@@ -102,9 +102,8 @@ def create_coordinated_qr_image(
 
 if __name__ == "__main__":
     # my_link = "https://tinyurl.com/vermaa"
-    # my_link = "https://instagram.com/anurag_verma_india"
+    my_link = "https://instagram.com/anurag_verma_india"
 
-    my_link = "otpauth://totp/GitHub%3Aanurag-verma-india?period=30&digits=6&algorithm=SHA1&secret=CIGIY3EX56KLBJ6K&issuer=GitHub"
 
     # Get the current date and time
     current_datetime = datetime.now()
