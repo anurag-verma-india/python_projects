@@ -120,7 +120,7 @@ if __name__ == "__main__":
     # )
     create_coordinated_qr_image(
         my_link,
-        savetolocation=f"/storage/shared/qr-{current_time}.png",
+        savetolocation=f"/storage/shared/01/qr-{current_time}.png",
         coordinates=False,
         # coordinates=True
     )
