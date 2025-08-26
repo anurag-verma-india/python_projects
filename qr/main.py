@@ -112,15 +112,16 @@ if __name__ == "__main__":
 
     # print("Current Time =", current_time)
 
-    # create_coordinated_qr_image(
-    #     my_link,
-    #     savetolocation=f"/home/anurag/Desktop/qr-{current_time}.png",
-    #     coordinates=False,
-    #     # coordinates=True
-    # )
     create_coordinated_qr_image(
         my_link,
-        savetolocation=f"/data/data/com.termux/files/home/storage/shared/01/qr-{current_time}.png",
+        savetolocation=f"qr-{current_time}.png",
         coordinates=False,
         # coordinates=True
     )
+    
+    # create_coordinated_qr_image(
+    #     my_link,
+    #     savetolocation=f"/data/data/com.termux/files/home/storage/shared/01/qr-{current_time}.png",
+    #     coordinates=False,
+    #     # coordinates=True
+    # )

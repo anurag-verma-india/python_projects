@@ -1,0 +1,1 @@
+cp ./*.png /data/data/com.termux/files/home/storage/shared/01/
