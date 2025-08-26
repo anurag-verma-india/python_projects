@@ -102,7 +102,9 @@ def create_coordinated_qr_image(
 
 if __name__ == "__main__":
     # my_link = "https://tinyurl.com/vermaa"
-    my_link = "https://instagram.com/anurag_verma_india"
+    # my_link = "https://instagram.com/anurag_verma_india"
+
+    my_link = "otpauth://totp/GitHub%3Aanurag-verma-india?period=30&digits=6&algorithm=SHA1&secret=CIGIY3EX56KLBJ6K&issuer=GitHub"
 
     # Get the current date and time
     current_datetime = datetime.now()
@@ -110,18 +112,10 @@ if __name__ == "__main__":
     # Extract only the time component
     current_time = current_datetime.strftime("%Hh%Mm%Ss")
 
-    # print("Current Time =", current_time)
-
     create_coordinated_qr_image(
         my_link,
         savetolocation=f"qr-{current_time}.png",
-        coordinates=False,
-        # coordinates=True
+        # coordinates=False,
+        coordinates=True
     )
     
-    # create_coordinated_qr_image(
-    #     my_link,
-    #     savetolocation=f"/data/data/com.termux/files/home/storage/shared/01/qr-{current_time}.png",
-    #     coordinates=False,
-    #     # coordinates=True
-    # )
