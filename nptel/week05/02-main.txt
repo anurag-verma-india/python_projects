@@ -1,0 +1,39 @@
+
+def factors(n: int, data: list) -> list:
+    """Find all the factors of n
+    among the numbers in data.
+    >>> factors(8, [1, 2, 3])
+    [1, 2]
+    """
+    pass
+
+Among the following implementations which one is the best one according to the description given above
+
+
+
+def factors(n: int, data: list) -> list:
+    return [x for x in data if n % x == 0]
+
+
+def factors(n: int, data: list) -> list:
+    return [x for x in data if type(x) == int and x != 0 and n % x == 0]
+
+
+def factors(n: int, data: list) -> list:
+    result = []
+    for x in data:
+        if (type(x) == int or float) and x != 0 and n % x == 0:
+            result.append(x)
+    return result
+
+
+def factors(n: int, data: list) -> list:
+    result = []
+    for x in data:
+        try:
+            if n % x == 0:
+                result.append(x)
+        except:
+            pass
+    return result
+
